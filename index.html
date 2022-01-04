@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-size: 14px;
+    }
+    .first-screen {
+        background-color: var(--white-smoke);
+        padding: 79px 910px 141px 399px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .first-screen-menu {
+        margin-bottom: 160px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .glavnaja {
+        width: 13.75%;
+        font-family: "Roboto";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        color: var(--accent);
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        margin-right: 42px;
+        letter-spacing: 1.6px;
+    }
+    .ob-avtore {
+        width: 16.37%;
+        color: var(--black);
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        margin-right: 42px;
+        letter-spacing: 1.6px;
+        font-family: Georgia, 'Times New Roman', Times, serif ;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    .raboty {
+        width: 12.11%;
+        color: var(--black);
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        margin-right: 42px;
+        letter-spacing: 1.6px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    .process {
+        width: 14.08%;
+        color: var(--black);
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        margin-right: 42px;
+        letter-spacing: 1.6px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height:1.5;
+    }
+    .kontakty {
+        width: 16.2%;
+        color: var(--black);
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        letter-spacing: 1.6px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size:16px;
+        font-weight:700;
+        line-height:1.5;
+    }
+    .dizajn-i-verstka {
+        height: 12.5%;
+        width: 88.54%;
+        color: var(--black);
+        display: flex;
+        align-items: center;
+        margin-bottom: 45px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size:16px;
+        font-weight:700;
+        line-height: 1.5;
+    }
+    .lorem-ipsum-jeto-tekst-ryba-chasto-is {
+        height: 16.25%;
+        width: 88.38%;
+        color: var(--dim-gray);
+        display: flex;
+        align-items: center;
+        margin-bottom: 54px;
+        margin-left: 1px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size:16px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    .first-screen-button {
+        background-color: var(--accent);
+        padding: 19px 41px 20px;
+        display: flex;
+        align-items: center;
+    }
+    .napisat-mne {
+        color: var(--white);
+        flex: 1;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 1.6px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .obo-mne {
+        height: 50px;
+        width: 50%;
+        font-family: "Roboto";
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 38px;
+        color: var(--black);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 42px;
+    }
+    .lorem-ipsum-jeto-tekst-ryba-chasto-is {
+        height: 16.25%;
+        width: 88.38%;
+        color: var(--dim-gray);
+        display: flex;
+        align-items: center;
+        margin-bottom: 54px;
+        margin-left: 1px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size:16px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    .numbers {
+        background-color: var(--accent);
+        padding: 100px 424px 100px 409px;
+        display: flex;
+        align-items: center;
+    }
+    .numbers-item {
+        width: 141px;
+        height: 50px;
+        margin-right: 45px;
+    }
+    .numbers-item-two {
+        display: flex;
+        align-items: flex-start;
+    }
+    .numbers-item-two:not(:last-of-type) {
+        margin-right: 49px;
+    }
+    .group {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+    .group-two {
+        margin-top: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .num-40 {
+        height: 51.06%;
+        width: 50.7%;
+        font-family: "Roboto";
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 24px;
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .proektov {
+        height: 38.3%;
+        color: var(--white);
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.5;
+    }  
+    .project {
+        width: 35.46%;
+        align-self: stretch;
+        margin-right: 20px;
+        object-fit: cover;
+    }
+    .video {
+        background-color: var(--white-smoke);
+        padding: 100px 405px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .video-title {
+        margin-bottom: 46px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .kak-ja-rabotaju {
+        height: 24.05%;
+        width: 74.63%;
+        font-family: "Roboto";
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 38px;
+        color: var(--black);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 42px;
+    }
+    .lorem-ipsum-jeto-tekst-ryba-chasto-is {
+        height: 49.37%;
+        color: var(--dim-gray);
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    .flex-wrapper-one {
+        background-size: 100% 100%;
+        background-position: center;
+        background-image: url("Skillet\ -\ Monster\ \(Official\ Video\).mp4");
+        padding: 250px 505px;
+        display: flex;
+        align-items: center;
+    }
+    .vector {
+        flex: 1;
+        align-self: stretch;
+        object-fit: contain;
+    }
+</style>
+<body>
+    <div class="first-screen">
+        <div class="first-screen-menu">
+          <p class="glavnaja">ГЛАВНАЯ</p>
+          <p class="ob-avtore">ОБ АВТОРЕ</p>
+          <p class="raboty">РАБОТЫ</p>
+          <p class="process">ПРОЦЕСС</p>
+          <p class="kontakty">КОНТАКТЫ</p>
+        </div>
+        <p class="dizajn-i-verstka">Дизайн и верстка</p>
+        <p class="lorem-ipsum-jeto-tekst-ryba-chasto-is">
+          Lorem Ipsum - это текст-&#34;рыба&#34;, часто
+          используемый в печати и вэб-дизайне. Lo rem Ipsum
+          является стандартной &#34;рыбой&#34; для текстов на
+          латинице с начала XVI века.
+        </p>
+        <div class="first-screen-button">
+          <p class="napisat-mne">НАПИСАТЬ МНЕ</p>
+        </div>
+    </div>
+    <div class="about-me">
+        <p class="obo-mne">Обо мне</p>
+        <p class="lorem-ipsum-jeto-tekst-ryba-chasto-is">
+          Lorem Ipsum - это текст-&#34;рыба&#34;, часто
+          используемый в печати и вэб-дизайне. Lorem Ipsum
+          является стандартной &#34;рыбой&#34; для текстов на
+          латинице с начала XVI века.
+        </p>
+    </div>
+    <div class="numbers">
+        <div class="numbers-item-two">
+         
+          <div class="group-two">
+            <p class="num-40">40&#43;</p>
+            <p class="proektov">проектов</p>
+          </div>
+        </div>
+        <div class="numbers-item-two"> 
+          <div class="group-two">
+            <p class="num-40">40&#43;</p>
+            <p class="proektov">проектов</p>
+          </div>
+        </div>
+        <div class="numbers-item-two">
+          <div class="group-two">
+            <p class="num-40">40&#43;</p>
+            <p class="proektov">проектов</p>
+          </div>
+        </div>
+        <div class="numbers-item-two">
+          <div class="group-two">
+            <p class="num-40">40&#43;</p>
+            <p class="proektov">проектов</p>
+          </div>
+        </div>
+        <div class="numbers-item-two">
+          <div class="group-two">
+            <p class="num-40">40&#43;</p>
+            <p class="proektov">проектов</p>
+          </div>
+        </div>
+    </div>
+    <div class="video">
+        <div class="video-title">
+          <p class="kak-ja-rabotaju">Как я работаю</p>
+          <p class="lorem-ipsum-jeto-tekst-ryba-chasto-is">
+            Lorem Ipsum - это текст-&#34;рыба&#34;, часто
+            используемый в печати и вэб-дизайне. Lorem Ipsum
+            является стандартной &#34;рыбой&#34; для текстов на
+            латинице с начала XVI века.
+          </p>
+        </div>
+        <div class="flex-wrapper-one">
+            <iframe width="700" height="500"  img class="vector" src="Skillet - Monster (Official Video).mp4" alt=""> 
+        </div>
+      </div>
+
+    
+
+</body>
+</html>
